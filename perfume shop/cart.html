@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart - ESSENCE</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">ESSENCE</div>
+    <nav>
+      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="dashboard.html#about">About Us</a></li>
+        <li><a href="dashboard.html#categories">Categories</a></li>
+        <li><a href="dashboard.html#collections">Collections</a></li>
+        <li><a href="dashboard.html#contact">Contact Us</a></li>
+      </ul>
+
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search..." id="searchInput" />
+      </div>
+
+      <div class="cart-container">
+        <button class="cart-btn" aria-label="Open cart">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="cart-page">
+    <div class="cart-page-container">
+      <div class="cart-header">
+        <h1 class="cart-title">Your Shopping Cart</h1>
+        <p class="cart-subtitle">Review your items and proceed to checkout.</p>
+      </div>
+
+      <div class="cart-content">
+        <div class="cart-items-container" id="cartItemsContainer"></div>
+
+        <div class="cart-summary" id="cartSummary">
+          <h2 class="summary-title">Order Summary</h2>
+
+          <div class="summary-row">
+            <span>Subtotal:</span>
+            <span id="summarySubtotal">$0.00</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Shipping:</span>
+            <span id="summaryShipping">$5.00</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Tax (8%):</span>
+            <span id="summaryTax">$0.00</span>
+          </div>
+
+          <div class="summary-row total">
+            <span>Total:</span>
+            <span id="summaryTotal">$0.00</span>
+          </div>
+
+          <div class="cart-actions">
+            <a class="btn btn-continue" href="dashboard.html">
+              <i class="fas fa-arrow-left"></i> Continue Shopping
+            </a>
+            <button class="btn btn-checkout" id="checkoutBtn">
+              <i class="fas fa-lock"></i> Checkout
+            </button>
+            <button class="btn btn-clear" id="clearCartBtn">
+              <i class="fas fa-trash"></i> Clear
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

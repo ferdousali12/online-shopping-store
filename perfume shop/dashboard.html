@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESSENCE Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">ESSENCE</div>
+    <nav>
+      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search..." id="searchInput" />
+      </div>
+
+      <div class="cart-container">
+        <button class="cart-btn" aria-label="Open cart">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-section" id="collections">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="189739-886596205.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-content">
+      <h1>Discover Your Signature Scent</h1>
+      <p>Explore perfumes, cosmetic containers, men fragrances, and makeup essentials.</p>
+      <button class="hero-btn" onclick="scrollToCategory('perfume-container')">Shop Now</button>
+    </div>
+  </section>
+
+  <section class="categories-section" id="categories">
+    <h1>Our Categories</h1>
+    <p class="categories-desc">
+      Explore our exclusive range of perfume containers, cosmetic containers, male perfume containers, and makeup containers.
+    </p>
+
+    <div class="cards">
+      <div class="card" onclick="scrollToCategory('perfume-container')">
+        <div class="icon"><i class="fas fa-spray-can"></i></div>
+        <h3>female perfume</h3>
+      </div>
+
+      <div class="card" onclick="scrollToCategory('cosmetic-container')">
+        <div class="icon"><i class="fas fa-pump-soap"></i></div>
+        <h3>Cosmetic </h3>
+      </div>
+
+      <div class="card" onclick="scrollToCategory('male-perfume-container')">
+        <div class="icon"><i class="fas fa-gem"></i></div>
+        <h3>Male Perfume </h3>
+      </div>
+
+      <div class="card" onclick="scrollToCategory('makeup-container')">
+        <div class="icon"><i class="fas fa-palette"></i></div>
+        <h3>Makeup </h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="content-about">
+      <div class="box">
+        <h3><i>About Us</i></h3>
+        <p>
+          Welcome to ESSENCE, your trusted online destination for premium perfumes, fragrance containers, and high-quality cosmetics. We focus on original products, affordable prices, smooth shopping, and fast delivery so every customer can find a product that feels personal and elegant.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="shop" id="perfume-container">
+    <h1 class="heading"><i>female perfume</i></h1>
+    <div class="box-container">
+      <div class="box">
+        <div class="img"><img src="pic1women.jpeg" alt="Rose Essence perfume" /></div>
+        <div class="content">
+          <h3>Rose Essence</h3>
+          <div class="price">$12.99 <span>$18.99</span></div>
+          <button class="btn add-cart-btn" data-id="rose-essence">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="women perfume.jfif" alt="Vanilla Bloom perfume" /></div>
+        <div class="content">
+          <h3>Vanilla Bloom</h3>
+          <div class="price">$14.50 <span>$19.99</span></div>
+          <button class="btn add-cart-btn" data-id="vanilla-bloom">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="pic3women.jpeg" alt="Midnight Jasmine perfume" /></div>
+        <div class="content">
+          <h3>Midnight Jasmine</h3>
+          <div class="price">$16.99 <span>$22.99</span></div>
+          <button class="btn add-cart-btn" data-id="midnight-jasmine">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="pic8women.jpeg" alt="Sweet Peony perfume" /></div>
+        <div class="content">
+          <h3>Sweet Peony</h3>
+          <div class="price">$13.99 <span>$20.00</span></div>
+          <button class="btn add-cart-btn" data-id="sweet-peony">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="pic6women.jpeg" alt="Gardenia Charm perfume" /></div>
+        <div class="content">
+          <h3>Gardenia Charm</h3>
+          <div class="price">$16.50 <span>$22.50</span></div>
+          <button class="btn add-cart-btn" data-id="gardenia-charm">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="pic7women.jpeg" alt="Moisturizer Rose perfume" /></div>
+        <div class="content">
+          <h3>Moisturizer Rose</h3>
+          <div class="price">$13.75 <span>$19.99</span></div>
+          <button class="btn add-cart-btn" data-id="moisturizer-rose">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="womenPerfume replace 6.jfif" alt="Peach Blossom perfume" /></div>
+        <div class="content">
+          <h3>Peach Blossom</h3>
+          <div class="price">$14.25 <span>$20.50</span></div>
+          <button class="btn add-cart-btn" data-id="peach-blossom">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="pic1women.jpeg" alt="Lavender Mist perfume" /></div>
+        <div class="content">
+          <h3>Lavender Mist</h3>
+          <div class="price">$15.00 <span>$21.50</span></div>
+          <button class="btn add-cart-btn" data-id="lavender-mist">add to cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shop" id="cosmetic-container">
+    <h1 class="heading"><i>Cosmetic </i></h1>
+    <div class="box-container">
+      <div class="box">
+        <div class="img"><img src="pic1cosmetics.jpeg" alt="Matte Blush cosmetic" /></div>
+        <div class="content">
+          <h3>Matte Blush</h3>
+          <div class="price">$10.99 <span>$15.99</span></div>
+          <button class="btn add-cart-btn" data-id="matte-blush">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="pic2cosmetics.jpeg" alt="Translucent Powder cosmetic" /></div>
+        <div class="content">
+          <h3>Translucent Powder</h3>
+          <div class="price">$12.50 <span>$17.50</span></div>
+          <button class="btn add-cart-btn" data-id="translucent-powder">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="pic3cosmetics.jpeg" alt="Liquid Foundation cosmetic" /></div>
+        <div class="content">
+          <h3>Liquid Foundation</h3>
+          <div class="price">$14.00 <span>$20.00</span></div>
+          <button class="btn add-cart-btn" data-id="liquid-foundation">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="pic7cosmetic.jpeg" alt="Concealer Stick cosmetic" /></div>
+        <div class="content">
+          <h3>Concealer Stick</h3>
+          <div class="price">$12.75 <span>$17.50</span></div>
+          <button class="btn add-cart-btn" data-id="concealer-stick">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="pic4cosmetics.jpeg" alt="Beauty Blender cosmetic" /></div>
+        <div class="content">
+          <h3>Beauty Blender</h3>
+          <div class="price">$13.25 <span>$18.00</span></div>
+          <button class="btn add-cart-btn" data-id="beauty-blender-cosmetic">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="pic5cosmetics.jpeg" alt="Classic Lipstick cosmetic" /></div>
+        <div class="content">
+          <h3>Classic Lipstick</h3>
+          <div class="price">$11.99 <span>$16.50</span></div>
+          <button class="btn add-cart-btn" data-id="classic-lipstick-cosmetic">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="pic6cosmetic.png" alt="Liquid Eyeliner cosmetic" /></div>
+        <div class="content">
+          <h3>Liquid Eyeliner</h3>
+          <div class="price">$11.50 <span>$16.00</span></div>
+          <button class="btn add-cart-btn" data-id="liquid-eyeliner-cosmetic">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="pic8cosmetic.jpeg" alt="Hydrating Moisturizer cosmetic" /></div>
+        <div class="content">
+          <h3>Hydrating Moisturizer</h3>
+          <div class="price">$14.25 <span>$19.50</span></div>
+          <button class="btn add-cart-btn" data-id="hydrating-moisturizer-cosmetic">add to cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shop" id="male-perfume-container">
+    <h1 class="heading"><i>Male Perfume </i></h1>
+    <div class="box-container">
+      <div class="box">
+        <div class="img"><img src="menperfume no1.jfif" alt="Ocean Breeze men's perfume" /></div>
+        <div class="content">
+          <h3>Ocean Breeze</h3>
+          <div class="price">$17.99 <span>$23.99</span></div>
+          <button class="btn add-cart-btn" data-id="ocean-breeze">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="menPerfume2.jfif" alt="Cedarwood Nights men's perfume" /></div>
+        <div class="content">
+          <h3>Cedarwood Nights</h3>
+          <div class="price">$16.50 <span>$22.50</span></div>
+          <button class="btn add-cart-btn" data-id="cedarwood-nights">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="menPerfume3.jfif" alt="Spiced Amber men's perfume" /></div>
+        <div class="content">
+          <h3>Spiced Amber</h3>
+          <div class="price">$18.00 <span>$24.99</span></div>
+          <button class="btn add-cart-btn" data-id="spiced-amber">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="menPerfume4.jfif" alt="Black Sandalwood men's perfume" /></div>
+        <div class="content">
+          <h3>Black Sandalwood</h3>
+          <div class="price">$15.99 <span>$21.50</span></div>
+          <button class="btn add-cart-btn" data-id="black-sandalwood">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="menPerfume5.jfif" alt="Urban Spice men's perfume" /></div>
+        <div class="content">
+          <h3>Urban Spice</h3>
+          <div class="price">$16.75 <span>$22.00</span></div>
+          <button class="btn add-cart-btn" data-id="urban-spice">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="menPerfume6.jfif" alt="Citrus Rush men's perfume" /></div>
+        <div class="content">
+          <h3>Citrus Rush</h3>
+          <div class="price">$17.25 <span>$23.50</span></div>
+          <button class="btn add-cart-btn" data-id="citrus-rush">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="menPerfume7.jfif" alt="Leather Oud men's perfume" /></div>
+        <div class="content">
+          <h3>Leather Oud</h3>
+          <div class="price">$18.50 <span>$25.00</span></div>
+          <button class="btn add-cart-btn" data-id="leather-oud">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="menPerfume8.jfif" alt="Moisturizer Cedar men's perfume" /></div>
+        <div class="content">
+          <h3>Moisturizer Cedar</h3>
+          <div class="price">$15.50 <span>$21.00</span></div>
+          <button class="btn add-cart-btn" data-id="moisturizer-cedar">add to cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shop" id="makeup-container">
+    <h1 class="heading"><i>Makeup </i></h1>
+    <div class="box-container">
+      <div class="box">
+        <div class="img"><img src="pic5cosmetics.jpeg" alt="Classic Lipstick makeup" /></div>
+        <div class="content">
+          <h3>Classic Lipstick</h3>
+          <div class="price">$11.99 <span>$16.50</span></div>
+          <button class="btn add-cart-btn" data-id="classic-lipstick">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="pic4cosmetics.jpeg" alt="Beauty Blender makeup" /></div>
+        <div class="content">
+          <h3>Beauty Blender</h3>
+          <div class="price">$13.25 <span>$18.00</span></div>
+          <button class="btn add-cart-btn" data-id="beauty-blender">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="pic6cosmetic.png" alt="Liquid Eyeliner makeup" /></div>
+        <div class="content">
+          <h3>Liquid Eyeliner</h3>
+          <div class="price">$11.50 <span>$16.00</span></div>
+          <button class="btn add-cart-btn" data-id="liquid-eyeliner">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="pic8cosmetic.jpeg" alt="Hydrating Moisturizer makeup" /></div>
+        <div class="content">
+          <h3>Hydrating Moisturizer</h3>
+          <div class="price">$14.25 <span>$19.50</span></div>
+          <button class="btn add-cart-btn" data-id="hydrating-moisturizer">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="pic1cosmetics.jpeg" alt="Velvet Blush makeup" /></div>
+        <div class="content">
+          <h3>Velvet Blush</h3>
+          <div class="price">$12.99 <span>$18.25</span></div>
+          <button class="btn add-cart-btn" data-id="velvet-blush">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="pic2cosmetics.jpeg" alt="Soft Glow Powder makeup" /></div>
+        <div class="content">
+          <h3>Soft Glow Powder</h3>
+          <div class="price">$13.50 <span>$18.99</span></div>
+          <button class="btn add-cart-btn" data-id="soft-glow-powder">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="pic3cosmetics.jpeg" alt="Silk Base Foundation makeup" /></div>
+        <div class="content">
+          <h3>Silk Base Foundation</h3>
+          <div class="price">$15.00 <span>$21.00</span></div>
+          <button class="btn add-cart-btn" data-id="silk-base-foundation">add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="img"><img src="pic7cosmetic.jpeg" alt="Bright Concealer makeup" /></div>
+        <div class="content">
+          <h3>Bright Concealer</h3>
+          <div class="price">$12.25 <span>$17.25</span></div>
+          <button class="btn add-cart-btn" data-id="bright-concealer">add to cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="email-section" id="contact">
+    <div class="email-div">
+      <h3>Subscribe For Latest Updates</h3>
+      <input type="text" placeholder="Name" />
+      <input type="email" placeholder="Email" />
+      <textarea placeholder="Review"></textarea>
+      <a href="#" class="btn">Subscribe</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-about">
+      <p>We offer premium perfumes and cosmetics for men and women, with fast delivery and best prices.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="dashboard.html">Home</a>
+      <a href="#categories">Shop</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-contact">
+      <p>Email: support@example.com</p>
+      <p>Phone: +92 300 1234567</p>
+    </div>
+
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+    <div class="credit">Created by <span>Areeba, Ferdous, Aroosa</span> | All Rights Reserved!</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
